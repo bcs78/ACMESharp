@@ -37,7 +37,6 @@
   <ItemGroup>
     <Reference Include="ManagedOpenSsl64, Version=0.6.1.0, Culture=neutral, processorArchitecture=AMD64">
       <HintPath>..\packages\ManagedOpenSsl64.0.6.1.1\lib\net20\ManagedOpenSsl64.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
@@ -69,6 +68,9 @@
       <Link>x64\ssleay32.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

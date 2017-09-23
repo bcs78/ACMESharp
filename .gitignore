@@ -205,3 +205,4 @@ ACMESharp/ACMESharp.Providers-test/Config/CloudFlareHandlerParams.json
 
 ## Global ignore folder
 _IGNORE
+/ACMESharp/ACMESharp.Providers-test/Config/DynuHandlerParams.json

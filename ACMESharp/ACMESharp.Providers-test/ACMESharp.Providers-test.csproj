@@ -69,6 +69,7 @@
     <Compile Include="Config\AwsR53HandlerParams.cs" />
     <Compile Include="Config\AwsS3HandlerParams.cs" />
     <Compile Include="Config\IisHandlerParams.cs" />
+    <Compile Include="DynuTests.cs" />
     <Compile Include="IisProviderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCommon.cs" />
@@ -84,6 +85,8 @@
     <None Include="Config\CloudFlareHandlerParams.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Config\DynuHandlerParams.json" />
+    <None Include="Config\DynuHandlerParams.json.sample" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +97,10 @@
     <ProjectReference Include="..\ACMESharp.Providers.CloudFlare\ACMESharp.Providers.CloudFlare.csproj">
       <Project>{63ae964a-79a4-4c7d-a686-dd9b2389af3f}</Project>
       <Name>ACMESharp.Providers.CloudFlare</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ACMESharp.Providers.Dynu\ACMESharp.Providers.Dynu.csproj">
+      <Project>{6ce04085-b7f1-48f5-bc8b-31e944a57d72}</Project>
+      <Name>ACMESharp.Providers.Dynu</Name>
     </ProjectReference>
     <ProjectReference Include="..\ACMESharp.Providers.IIS\ACMESharp.Providers.IIS.csproj">
       <Project>{944ec9bd-81a1-484e-ba29-360bc155bf51}</Project>
